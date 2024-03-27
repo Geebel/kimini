@@ -21,7 +21,6 @@ body {
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
-
 h1, h2, h3, h4, h5, h6 {
   color: #31373a;
   font-family: "Raleway", sans-serif;
@@ -170,6 +169,64 @@ a, a:visited {
 /*------------------------------------------------------
 	HEADER STYLES 
 --------------------------------------------------------*/
+/* Sub Header Style */
+
+.sub-header {
+	background-color:  #ff554e !important;
+  height: 46px;
+	line-height: 46px;
+}
+
+.sub-header ul li {
+	display: inline-block;
+}
+
+.sub-header ul.left-info li {
+	border-left: 1px solid rgba(0, 0, 0, 0.35) 0px 0px 3px;
+	padding: 0px 0px;
+}
+
+.sub-header ul.left-info li:last-child {
+	border-right: 1px solid rgba(0, 0, 0, 0.35) 0px 0px 3px;
+}
+
+.sub-header ul.left-info li i {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.sub-header ul.left-info li a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.sub-header ul.right-icons {
+	float: right;
+}
+
+.sub-header ul.right-icons li {
+	margin-right: -4px;
+	width: 46px;
+	display: inline-block;
+	text-align: center;
+	border-right: 1px solid rgba(0, 0, 0, 0.35) 0px 0px 3px;
+}
+
+.sub-header ul.right-icons li:first-child {
+	border-left: 1px solid rgba(0, 0, 0, 0.35) 0px 0px 3px;
+}
+
+.sub-header ul.right-icons li a {
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.sub-header ul.right-icons li a:hover {
+	opacity: 0.75;
+}
+
+
 .site-header {
   position: fixed;
   top: 0;
@@ -188,7 +245,7 @@ a, a:visited {
 }
 
 .site-header.site-header-shrink {
-  padding: 17px 0;
+  padding: 5px 0;
 }
 
 .main-nav ul li {
@@ -444,9 +501,88 @@ input.mainBtn {
 }
 
 #homeIntro {
-  background-image: url("../images/includes/homeintro.jpg");
+  background-image: url("../images_/home.jpg");
+}
+.page-heading {
+	text-align: center;
+	background-image: url(../images/);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 0px;
+	color: #fff;
 }
 
+.page-heading h1 {
+	text-transform: capitalize;
+	font-size: 48px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.page-heading span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
+
+
+/* team */
+
+.team {
+	background-color: #f7f7f7;
+	margin-top: 140px;
+	margin-bottom: -140px;
+	padding: 120px 0px;
+}
+
+.team-item img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.team-item .down-content {
+	background-color: #fff;
+	padding: 30px;
+}
+
+.team-item .down-content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.25px;
+	margin-bottom: 10px;
+}
+
+.team-item .down-content span {
+	color: #a4c639;
+	font-weight: 600;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.team-item .down-content p {
+	margin-bottom: 20px;
+}
+
+.tenets-team h3{
+  font-style: italic;
+  font-weight: 700;
+}
+.tenets h3{
+  font-style: italic;
+  font-weight: 700;
+}
+.tenets h1{
+  font-style: italic;
+  font-weight: 700;
+}
+.power-list{
+  margin-left: 20px;
+}
 #portfolio {
   background-image: url("../images/includes/portfolio.jpg");
 }
@@ -928,7 +1064,12 @@ blockquote {
   padding: 5px 10px;
   font-size: 14px;
 }
-
+.papa-img{
+  width: 600px !important;
+}
+.papa-ttl{
+  margin-right: 23%;
+}
 .member-name {
   font-size: 22px;
   font-weight: 500;
